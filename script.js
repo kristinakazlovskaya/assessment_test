@@ -108,6 +108,14 @@ main.addEventListener('click', (e) => {
   }
 });
 
+// copy task
+toDoTasksContainer.addEventListener('click', (e) => {
+  if (e.target.matches('.task_copy img')) {
+    let copiedTask = e.target.parentElement.parentElement.cloneNode(true);
+    e.target.parentElement.parentElement.insertAdjacentElement('afterend', copiedTask);
+  };
+});
+
 // edit task
 let clickHandler;
 let keyUpHandler;
