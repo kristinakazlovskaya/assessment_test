@@ -111,7 +111,7 @@
 }
 
 .wrapper .main_container .sidebar {
-  width: 52px;
+  min-width: 52px;
   height: 100%;
   background-color: #550dc9;
   position: relative;
@@ -250,15 +250,6 @@
   margin: 0 8px;
 }
 
-.hidden {
-  display: none;
-}
-
-.complited_task {
-  color: #a3a3a3;
-  text-decoration: line-through;
-}
-
 .wrapper .main_container .main .main_right .main_complited_tasks_title {
   font-family: "Open Sans";
   font-weight: 600;
@@ -266,4 +257,13 @@
   line-height: 22px;
   color: #373737;
   margin: 0 0 8px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.complited_task {
+  color: #a3a3a3;
+  text-decoration: line-through;
 }

@@ -22,54 +22,26 @@
       </div>
     </header>
     <div class="main_container">
-      <aside class="sidebar">
+      <nav class="sidebar">
         <div class="sidebar_item sidebar_active_item">
           <img src="/assets/img/tasks.svg" alt="Tasks icon" width="15" height="15">
         </div>
-      </aside>
+      </nav>
       <main class="main">
         <div class="main_left">
           <input type="text" id="task_input" class="main_task_input" placeholder="+ Add a task, press Enter to save">
           <button class="main_add_task_btn" id="add_task_btn">Add</button>
           <div class="main_total_tag">Total:&nbsp;<span id="total_value">0</span></div>
           <h2 class="main_to_do_tasks_title">To do (<span id="to_do_count">0</span>)</h2>
-          <div class="main_to_do_tasks_container">
-            <div class="task">
-              <input type="checkbox" class="task_chekbox" id="task_chekbox">
-              <div class="task_text">Add Icon to Dashboard</div>
-              <button class="task_edit" id="edit_task_btn"><img src="/assets/img/edit.svg" alt="Edit task" width="20" height="20"></button>
-              <button class="task_copy" id="copy_task_btn"><img src="/assets/img/copy.svg" alt="Copy task" width="20" height="20"></button>
-              <button class="task_delete" id="delete_task_btn"><img src="/assets/img/bin.svg" alt="Delete task" width="20" height="20"></button>
-            </div>
-            <div class="task">
-              <input type="checkbox" class="task_chekbox" id="task_chekbox">
-              <div class="task_text">Add Icon to Dashboard</div>
-              <button class="task_edit" id="edit_task_btn"><img src="/assets/img/edit.svg" alt="Edit task" width="20"
-                  height="20"></button>
-              <button class="task_copy" id="copy_task_btn"><img src="/assets/img/copy.svg" alt="Copy task" width="20"
-                  height="20"></button>
-              <button class="task_delete" id="delete_task_btn"><img src="/assets/img/bin.svg" alt="Delete task" width="20"
-                  height="20"></button>
-            </div>
-          </div>
+          <div class="main_to_do_tasks_container"></div>
         </div>
         <div class="main_right">
           <h2 class="main_complited_tasks_title">Complited (<span id="complited_count">0</span>)</h2>
-          <div class="main_complited_tasks_container">
-            <div class="task complited_task">
-              <input type="checkbox" class="task_chekbox" id="task_chekbox">
-              <div class="task_text">Add Icon to Dashboard</div>
-              <button class="task_edit hidden" id="edit_task_btn"><img src="/assets/img/edit.svg" alt="Edit task" width="20"
-                  height="20"></button>
-              <button class="task_copy hidden" id="copy_task_btn"><img src="/assets/img/copy.svg" alt="Copy task" width="20"
-                  height="20"></button>
-              <button class="task_delete" id="delete_task_btn"><img src="/assets/img/bin.svg" alt="Delete task" width="20"
-                  height="20"></button>
-            </div>
-          </div>
+          <div class="main_complited_tasks_container"></div>
         </div>
       </main>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
